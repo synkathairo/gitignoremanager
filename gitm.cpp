@@ -17,7 +17,7 @@ void addEntry(string newEntry) {
 int main(int argc, char const *argv[])
 {
 	for (int i = 0; i<argc; i++) {
-		if(strcmp(argv[i],"add")==0) {
+		if(strcmp(argv[i],"-add")==0) {
 			if(argv[i+1]!=nullptr) {
 				addEntry(argv[i+1]);
 			}
